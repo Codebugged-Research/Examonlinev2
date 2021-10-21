@@ -109,17 +109,6 @@
       <button onclick="stop()" class="button2">stop</button>
       <br>
       <br>
-      <button onclick="location.href='https://sambitraze.github.io/tfjsdemo/Eye-Lip-Tracker/'" style="background-color: #ff9b05;
-		/* Green */
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		border-radius: 4px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;">Lip tracking</button>
-    </div>
   </div>
 
 
@@ -301,10 +290,10 @@
         var length2 = inputLabel.length;
         if (inputLabel.substring(0, length2 - 3) === ouputLabel.substring(0, length - 6)) {
           document.getElementById("message").innerHTML = `Face Recognition succesfull with accuracy: ${(ouputScore * 100).toFixed(2)}% redirecting now !!!`
-          setTimeout(function () {
-            document.getElementById("verify").style = "display: none"
-            document.getElementById("page2").style = ""
-          }, 800);
+          // setTimeout(function () {
+          //   document.getElementById("verify").style = "display: none"
+          //   document.getElementById("page2").style = ""
+          // }, 800);
 
         } else {
           document.getElementById("message").innerHTML = `Face Recognition failed`
