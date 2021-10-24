@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Online Final</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0/dist/tf.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script> -->
+</head>
+
+<body>
+    <!-- <div style="text-align: center;">
+        <header style="background-color: #282c34;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;">
+            <video id="videoElem" autoplay playsinline
+                style="position: absolute;  margin-left: auto; margin-right: auto;  left: 0; right: 0;   text-align: center;    z-index: 9;    width: 640;    height: 640;"></video>
+            <canvas id="canvasRef"
+                style="position: absolute;  margin-left: auto;  margin-right: auto;  left: 0; right: 0;   text-align: center;    z-index: 8;    width: 640;    height: 640;"></canvas>
+        </header>
+    </div> -->
+    <!-- <img src="" id="im" style=""> -->
+    <p>red-book yellow-phone</p>
+
+    <div class="slidecontainer">
+        <p>Book Strength</p>
+        <input type="range" min="0" max="1" step="0.1" value = "0.4" class="slider" id="bookStr">
+        <p id="bookStrVal"></p>
+    </div>
+    <div class="slidecontainer">
+        <p>Phone Strength</p>
+        <input type="range" min="0" max="1"  step="0.1" value = "0.4" class="slider" id="phoneStr">
+        <p id="phoneStrVal"></p>
+    </div>
+    <div style="width: 640; height: 640;"> <video id="videoElem" autoplay="true"
+            style="width: 640;  position:absolute; height: 640;"></video>
+        <canvas id="canvasRef" style="width: 640;  position:absolute;  height: 640;"></canvas>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
